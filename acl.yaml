@@ -1,0 +1,21 @@
+---
+version: v1
+services:
+  - name: authed
+    project: users
+    action: report
+
+default:
+  project: other
+  action: enforce
+
+global_allow_list:
+  - "captain-hook.getconvoy.io"
+
+global_deny_list:
+  # TODO(raymond): add other internal domains
+  - "*.internal"
+  - "cli.getconvoy.io"
+  - "cloud.getconvoy.io"
+  - "dashboard.getconvoy.io"
+  - "*.staging.getconvoy.io"
