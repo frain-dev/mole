@@ -7,13 +7,13 @@ Mole is an HTTP connect tunnel powered by smokescreen
 Build the docker image and tag it appropriately
 
 ```bash
-$ docker build -t frain-dev/mole:latest .
+$ docker build -t ghcr.io/frain-dev/mole:latest .
 ```
 
 ## Run
 
 ```bash
-$ docker run -p 4750:4750 -e PROXY_PASSWORD=$PROXY_PASSWORD frain-dev/mole:latest
+$ docker run -p 4750:4750 -e PROXY_PASSWORD=$PROXY_PASSWORD ghcr.io/frain-dev/mole:latest
 ```
 
 ## Configuration
