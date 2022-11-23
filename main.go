@@ -45,5 +45,15 @@ func main() {
 		}
 		return "authed", nil
 	}
+
+	conf.Healthcheck = http.HandlerFunc(OK)
 	smokescreen.StartWithConfig(conf, nil)
+
+}
+
+func OK(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/plain; charset=utf-8")
+	w.Header().Set("X-Content-Type-Options", "nosniff")
+	w.WriteHeader(http.StatusOK)
+	_, _ = w.Write([]byte("OK"))
 }
