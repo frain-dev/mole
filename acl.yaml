@@ -11,6 +11,7 @@ default:
 
 global_allow_list:
   - "captain-hook.getconvoy.io"
+  - "playground.getconvoy.io"
 
 global_deny_list:
   # TODO(raymond): add other internal domains
