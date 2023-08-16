@@ -12,6 +12,7 @@ default:
 global_allow_list:
   - "captain-hook.getconvoy.io"
   - "play.getconvoy.io"
+  - "https://dashboard.getconvoy.io/ingest/3B8HhWszSCAJhcyZ"
 
 global_deny_list:
   # TODO(raymond): add other internal domains
